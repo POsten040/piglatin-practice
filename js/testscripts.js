@@ -16,14 +16,23 @@ const userInput = "apple";
 
 const inputArray = userInput.split();
 function pigLatinOutput (userInput) {
-  
   if (userInput.charAt(0).match(vowelsRegEx)) {
-  finalArray = inputArray.map(function(element){ 
-  return finalArray.join('');
+  inputArray.map(function(whatever){ 
+  return whatever.join('way');
   });
-
   }
 };
+
+let vowels = ["a","e","i","o","u"];
+let newStr = "";
+
+function pigLatinOutput (str) {
+  if (vowels.indexOf(str[0]> -1) {
+    newStr = str + "way";
+    return newStr;
+  }
+};
+
 
 const userInput = "apple";
 const userInputArray = userInput.split("");
@@ -71,19 +80,45 @@ finalArray.join("");
 
 // }
 
+let userInput = "apple";
+let vowelRegEx = /[aeiouAEIOU]/;
+let matched = userInput.match(vowelRegEx);
+if(matched) {
+console.log('yep');
+}
+else
+{
+console.log('nope');
+}
 
-Describe: Word beginning with vowls
-Test: for words starting with a vowel, add "way" to the end
-Expect :tinput=apple then output=appleway
 
-Describe: Word beginning with consonants
-Test: for words beginning with consonants, move all of the first consecutive consonants to the end and add "ay"
-Expect: input= bread then output=eadbray
 
-Describe: words with qu in beginning
-Test: for words begining with qu move the qu to the end and add async
-Expect: input=quest then output=uestquay
+function pigLatin(str) {
+  str = str.toLowerCase()
+  const vowels =["a", "e", "i", "o", "u"];
+  let vowelIndex=0;
 
-Describe: Words beginningwith "y",
-Test: word beginning with "y",  treat "y" as a consonant
-Expect: input=yes output=esyay
+  if (vowels.includes(str[0])) {
+    return str + "way";
+  } else {
+    for (let char of str) {
+      if (vowels.includes(char)) {
+        vowelIndex = str.indexof(char);
+        break;
+      }
+    }
+    return str.slice(vowelIndex) + str.slice(0, vowelIndex) + "ay";
+  
+  }
+}
+
+function pigLatin (word) {
+  let firstConsonats = [];
+  let latinWord = "";
+  let regEx = /[aeiou]/gi;
+  let wordArray = word.toLowerCase().split("");
+
+  if (wordArray[0].match(regEx)) {
+    return wordArray
+  }
+}

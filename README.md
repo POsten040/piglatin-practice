@@ -3,7 +3,9 @@
 This script will convert a normal english sentence into Pig Latin.
 
 ### Contributors/date ###
-
+Ellie Lambert 
+Patrick Osten
+10/28/2020
 
 ### Test ###
 | Description | Test | Expectation |
