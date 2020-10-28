@@ -3,9 +3,22 @@ Test: The program will recognize vowels
 expect: "A sentence" output=recognizing those vowels
 
 const vowels = ["a","e","i","o","u"];
-const string = "$(#input).val();"
-const stringArray = string.split(); //[input]
-const finalArray = stringArray.push("way");
+let string = "apple"
+
+function wayPush(string) {
+const chars = string.split(""); //[input]
+const finalArray = chars.push("way");
+return finalArray;
+}
+
+function vowelCheck(element) {
+  chars.forEach(function(element) {
+    if (element === vowels)
+    console.log("starts with vowel");
+  }); 
+};
+
+}
 
 
 Describe: Word beginning with vowls
