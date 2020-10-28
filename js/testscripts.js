@@ -2,23 +2,74 @@ Describe: Recognize vowels
 Test: The program will recognize vowels
 expect: "A sentence" output=recognizing those vowels
 
-const vowels = ["a","e","i","o","u"];
-let string = "apple"
+const vowelsArray = ["a","e","i","o","u"];
+let words = "apple"
 
-function wayPush(string) {
-const chars = string.split(""); //[input]
-const finalArray = chars.push("way");
-return finalArray;
+function igLatin(input) {
+  const
 }
 
-function vowelCheck(element) {
-  chars.forEach(function(element) {
-    if (element === vowels)
-    console.log("starts with vowel");
-  }); 
+//this returns word(way)
+const vowelsArray = ["a","e","i","o","u"];
+const vowelsRegEx = /[aeiouy]/;
+const userInput = "apple";
+
+const inputArray = userInput.split();
+function pigLatinOutput (userInput) {
+  
+  if (userInput.charAt(0).match(vowelsRegEx)) {
+  finalArray = inputArray.map(function(element){ 
+  return finalArray.join('');
+  });
+
+  }
 };
 
-}
+const userInput = "apple";
+const userInputArray = userInput.split("");
+const finalArray = userInputArray.map(function(element) {
+  return element + "way";
+});
+finalArray.join(""); 
+// 
+//userInput.charAt(0):
+//-->"a"
+
+
+
+
+// function igLatin (input) {
+//   const words = input.split(" ");
+//     for(const i = 0; i < words.length; i++) {
+//       if (words[i].charAt(0).match(vowelsArray)){
+
+//       }
+//     }
+// }
+
+
+// function wayPush(finalArray) {
+//   let index = 0;
+//   let finalArray = [];
+//   while
+//     (index < vowelsArray.length) {
+//       finalArray.push(vowelsArray[index]);
+//       index ++;
+//     }
+//   }
+// const chars = string.split(""); //[input]
+// const finalArray = chars.push("way");
+// return finalArray;
+// }
+
+// function vowelCheck(input) {
+//   input.forEach(function(element) {
+//     if (element === vowels)
+//     console.log("starts with vowel");
+//   }); 
+// };
+
+// }
 
 
 Describe: Word beginning with vowls
